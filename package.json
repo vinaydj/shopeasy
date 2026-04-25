@@ -1,0 +1,23 @@
+{
+  "name": "shopeasy",
+  "version": "1.0.0",
+  "description": "Ecommervce App\r N",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinaydj/shopeasy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinaydj/shopeasy/issues"
+  },
+  "homepage": "https://github.com/vinaydj/shopeasy#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
