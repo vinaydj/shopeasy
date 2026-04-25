@@ -1,0 +1,24 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs: # 'jobs' must be plural
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # Updated to v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4 # Updated to v4
+
+      - name: Install dependencies
+        run: |
+          npm install
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: npm test
